@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- boxicons CSS -->
+        <link rel="stylesheet" href="Asset/boxicons/css/boxicons.min.css" />
+
+        <!-- My CSS -->
+        <link rel="stylesheet" href="CSS/style1.css" />
+        <title>Sign up</title>
+    </head>
+    <body>
+        <div class="container" id="home">
+            <div class="content">
+                <div class="title">
+                    <h1>Sign up</h1>
+                </div>
+                <form id="myform" onsubmit="validate()">
+                    <div class="form_content">
+                        <label for="username">* Username</label>
+                        <div class="inputan">
+                            <input
+                                type="text"
+                                name="username"
+                                class="username"
+                                id="username"
+                                autofocus
+                                required
+                            />
+                        </div>
+                    </div>
+                    <div class="form_content">
+                        <label for="email">* Email</label>
+                        <div class="inputan">
+                            <input
+                                type="email"
+                                name="email"
+                                class="email"
+                                id="email"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <div class="form_content">
+                        <label for="password">* Password</label>
+                        <div class="inputan">
+                            <input
+                                type="password"
+                                name="password"
+                                class="password"
+                                id="password"
+                                required
+                            />
+                            <span>
+                                <i class="bx bx-hide hide_password"></i>
+                            </span>
+                            <span>
+                                <i class="bx bx-show-alt show_password"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form_content">
+                        <label for="retype password"
+                            >* Retype The Password</label
+                        >
+                        <div class="inputan">
+                            <input
+                                type="password"
+                                name="retype password"
+                                class="retype_password"
+                                id="retype_password"
+                                required
+                            />
+                            <span>
+                                <i class="bx bx-hide hide_pw"></i>
+                            </span>
+                            <span>
+                                <i class="bx bx-show-alt show_pw"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form_content">
+                        <div class="checkbox">
+                            <input
+                                type="checkbox"
+                                name="checkbox"
+                                class="checkbox"
+                                id="checbox"
+                                required
+                            />
+                            <p>I accept and agreement</p>
+                        </div>
+                    </div>
+                    <div class="form_content">
+                        <div class="btn">
+                            <button type="submit">Sign up</button>
+                        </div>
+                    </div>
+                    <div class="form_content">
+                        <p>Have a account? <a href="">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="JS/script.js"></script>
+    </body>
+</html>

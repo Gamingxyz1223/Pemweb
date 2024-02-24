@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <!-- boxicons -->
+        <link rel="stylesheet" href="Asset/boxicons/css/boxicons.min.css" />
+
+        <!-- My CSS -->
+        <link rel="stylesheet" href="CSS/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Login</h1>
+            <form onsubmit="login()" autocomplete="off">
+                <label for="username">* Username or Email</label>
+                <input class="user" type="text" autofocus required /><br />
+                <div class="inputan">
+                    <label for="password"> * Password</label>
+                    <input class="password" type="password" required /><span
+                        class="btn_hide"
+                    >
+                        <i class="bx bx-hide hide_password"></i>
+                    </span>
+                    <span class="btn_show"
+                        ><i class="bx bx-show-alt show_password"></i
+                    ></span>
+                </div>
+                <br />
+                <p class="valid">* Incorect Username or Password *</p>
+                <button class="login">Sign in</button>
+                <p>
+                    Doesn't have a account yet?
+                    <a href="signUp.html">Sign Up</a>
+                </p>
+                <!-- <button onclick="signUp()" class="sign-up">Sign Up</button> -->
+            </form>
+        </div>
+
+        <script src="JS/script.js"></script>
+        <script>
+            alert("Clue: username = Ardiona. password = 123_ABC");
+        </script>
+    </body>
+</html>
